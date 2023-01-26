@@ -1,6 +1,13 @@
 pipeline {
     agent any 
     stages {
+        stage('Delete') { 
+            steps {
+            sh '''
+            sudo kubectl delete -f web.yml
+            '''
+            }
+        }
         stage('Image Build') { 
             steps {
             sh '''
