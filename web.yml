@@ -66,7 +66,7 @@ spec:
     spec:      
       containers:
         - name: web
-          image: nginx:1.14.0
+          image: 192.168.0.91:5000/web:polar
           volumeMounts:
           - name: web-conf
             mountPath: /etc/nginx/conf.d
