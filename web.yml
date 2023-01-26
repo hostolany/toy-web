@@ -41,10 +41,6 @@ data:
       location ~ \.jsp$ {
         proxy_pass   http://was-svc:8080;
       }
-      location ~ \.(css|js|jpg|jpeg|gif|png|html|svg)$ {
-        proxy_pass   http://was-svc:8080;
-      }
-
     }
 
 ---
