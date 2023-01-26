@@ -28,8 +28,6 @@ data:
       location / {
         root   /usr/share/nginx/html;
         index  index.html index.htm;
-              # root proxy_pass http://was-svc:8080/innovationProject/WebContent;
-              #index proxy_pass http://was-svc:8080/innovationProject/WebContent/index.jsp;
       }
       error_page   500 502 503 504  /50x.html;
       location = /50x.html {
