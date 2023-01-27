@@ -11,14 +11,14 @@ pipeline {
         stage('Image Build') { 
             steps {
             sh '''
-            sudo docker build -t 192.168.0.91:5000/web:polar .
+            sudo docker build -t 192.168.0.91:5000/web .
             '''
             }
         }
         stage('Image Push') { 
             steps {
             sh '''
-            sudo docker push 192.168.0.91:5000/web:polar
+            sudo docker push 192.168.0.91:5000/web
             '''
             }
         }
