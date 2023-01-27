@@ -4,4 +4,4 @@ WORKDIR /usr/share/nginx/html/
 ADD WebContent/* .
 
 #COPY tem/animal.tar.gz .
-RUN tar -Uxf animal.tar.gz
+#RUN tar -Uxf animal.tar.gz
