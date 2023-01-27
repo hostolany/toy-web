@@ -5,4 +5,4 @@ WORKDIR /usr/share/nginx/html/
 
 COPY tem/animal.tar.gz .
 RUN mv index.html index1.html
-RUN tar -xfu animal.tar.gz --strip-components=1;
+RUN tar -Uxf animal.tar.gz --strip-components=1;
